@@ -1,0 +1,425 @@
+.trang-chu-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: #c09440;
+}
+
+.trang-chu-info h1 {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Brush Script MT", Times, serif; 
+}
+
+.trang-chu-info h3 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.trang-chu-info .buttonAccessAboutus {
+    border-radius: 30px;
+    border: 1px solid #c09440;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    color: #c09440;
+}
+
+.trang-chu-info .buttonAccessAboutus:hover {
+    background-color: #c09440;
+    color: #fff;
+} 
+
+/* trang chu noi thay doi vi tri cua nha hang */
+.trang-chu-local {
+    background-color: #1c334f;
+    color: #fff;
+}
+.trang-chu-local .content-trang-chu-local {
+    margin: auto 12.5%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trang-chu-local .content-trang-chu-local .local-left {
+    flex: 1;
+}
+
+.trang-chu-local .content-trang-chu-local .local-left h1 {
+    color:#c09440;
+    font-size: 40px;
+    font-family: 'Brush Script MT', monospace;
+    margin-bottom: 15px;
+}
+
+.trang-chu-local .content-trang-chu-local .local-left p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trang-chu-local .content-trang-chu-local .local-right {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.trang-chu-local .content-trang-chu-local .local-right div {
+    width: 75%;
+    position: relative;
+}
+.trang-chu-local .content-trang-chu-local .local-right div .form-local {
+    width: 100%;
+    cursor: pointer;
+    background-color: #1c334f;
+    color: #fff;
+    padding: 10px 0 10px 15px;
+    font-size: 100%;
+    border-radius: 10px;
+    border-color: #fff;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+}
+.trang-chu-local .content-trang-chu-local .local-right div span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #c09440;
+    font-size: 180%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.out-change-local {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+
+/* trang chu hinh anh cua nha hang theo tung khu vuc */
+
+.trang-chu-img-local {
+    display: flex;
+}
+
+.trang-chu-img-local .img-local {
+    position: relative;
+    width: calc(100% / 3);
+    overflow: hidden;
+    height: 600px;
+}
+
+.trang-chu-img-local .img-local img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.trang-chu-img-local .img-local:hover img {
+    transform: scale(1.2);
+}
+
+.trang-chu-img-local .img-local .local-among {
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trang-chu-img-local .img-local .local-among i {
+    font-size: 40px;
+    color: #c09440;
+}
+
+.trang-chu-img-local .img-local .local-among i:first-child {
+    width: 15%;
+    text-align: center;
+}
+
+.trang-chu-img-local .img-local .local-among div {
+    width: 65%;
+    color: #fff;
+}
+
+.trang-chu-img-local .img-local .local-among div b {
+    color: #c09440;
+}
+
+.trang-chu-img-local .img-local .local-among i:last-child {
+    width: 20%;
+    text-align: center;
+    border-left: 3px solid #eee;
+}
+
+.img-decrease {
+    margin-top: -5px;
+    width: 100%;
+    height: 250px;
+}
+
+.menu-top {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 400%;
+}
+
+.menu-main, .menu-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-main .menu-main-first, .menu-main .menu-main-second {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.menu-main .menu-main-first p, .menu-main .menu-main-second p {
+    width: 24%;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.menu-main .menu-main-second p:not(:first-child), .menu-main .menu-main-first p:not(:first-child) {
+    margin-left: calc(4%/3);
+}
+
+.trang-chu-img {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.trang-chu-img .img {
+    width: 25%;
+    position: relative;
+}
+
+.trang-chu-img .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.trang-chu-img .img span {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.trang-chu-img .img span i {
+    position: absolute;
+    font-size: 60px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.trang-chu-img .img:hover span {
+    display: flex;
+    animation: showlogo 0.75s ease;
+}
+
+@keyframes showlogo {
+    from {
+        opacity: 0;
+    }
+}
+
+.trang-chu-img .img:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c09440;
+}
+
+.trang-chu-img .img:last-child div {
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #c09440;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.trang-chu-img .img:last-child div:hover {
+    background-color: #c09440;
+    color: #fff;
+}
+
+.trang-chu-img .img:last-child div i {
+    margin-left: 10px;
+    align-self: end;
+    color: rgb(185, 185, 185);
+}
+
+.contact-homepage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+}
+
+.contact-homepage img:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+}
+
+.contact-homepage img:nth-child(3) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 2;
+}
+
+/* img footer of homepage */
+.contain-homepage-footer {
+    padding-top: 100px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(235, 235, 235);
+}
+
+.contain-homepage-footer .homepage-footer {
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .trang-chu-local .content-trang-chu-local .local-right div .form-local {
+        padding: 8px 10px;
+    }
+    .trang-chu-local .content-trang-chu-local .local-right div span {
+        font-size: 140%;
+        width: 40px;
+    }
+    .trang-chu-local .content-trang-chu-local {
+        margin: auto 5%;
+    }
+    .trang-chu-img-local .img-local {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .trang-chu-local .content-trang-chu-local .local-right div {
+        width: 90%;
+    }
+    .trang-chu-local .content-trang-chu-local .local-right div .form-local {
+        font-size: 80%;
+    }
+} 
+
+
+@media only screen and (max-width: 450px) {
+    .trang-chu-info h3 {
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 30px;
+    }
+    .trang-chu-local .content-trang-chu-local {
+        padding: 20px 0;
+    }
+    .trang-chu-local .content-trang-chu-local {
+        flex-direction: column;
+    }
+    .trang-chu-local .content-trang-chu-local .local-right {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .trang-chu-local .content-trang-chu-local .local-left h1 {
+        font-size: 35px;
+    }
+    .trang-chu-local .content-trang-chu-local .local-right div {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .trang-chu-local .content-trang-chu-local .local-right div .form-local {
+        font-size: 10px;
+        padding: 10px 0 10px 10px;
+    }
+    .trang-chu-img-local {
+        flex-direction: column;
+    }
+    .trang-chu-img-local .img-local {
+        width: 100%;
+        height: 450px;
+    }
+    .img-decrease {
+        height: 100px;
+    }
+    .trang-chu-img .img:last-child div {
+        font-size: 10px;
+    }
+    .contact-homepage {
+        height: 700px;
+    }
+    .contact-homepage img:nth-child(2) {
+        display: none;
+    }
+    .contact-homepage img:nth-child(3) {
+        bottom: -70px;
+    } 
+    .contain-homepage-footer {
+        background-color: rgb(235, 235, 235);
+    }
+    .trang-chu-img .img {
+        width: 50%;
+    }
+    .trang-chu-img-local .img-local .local-among i {
+        font-size: 30px;
+    }
+    .trang-chu-img-local .img-local .local-among div b {
+        font-size: 12px;
+    }
+    .trang-chu-img-local .img-local .local-among div h5 {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+

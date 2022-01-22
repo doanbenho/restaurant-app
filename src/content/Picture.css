@@ -1,0 +1,234 @@
+.tofixed-body {
+    position: fixed;
+}
+
+.container-picture .content-picture {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container-picture .content-picture h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    font-family: 'Brush Script MT', monospace;
+}
+
+.container-picture .content-picture h5 {
+    color: #c09440;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.container-picture .content-picture .chose-type-img {
+    margin: 0 12.5% 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-picture .content-picture .img-choose {
+    margin: 30px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto 12.5%;
+}
+
+.container-picture .content-picture .ngang-img-picture {
+    width: 100%;
+}
+
+.container-picture .content-picture .img-choose div {
+    position: relative;
+    width: 23%;
+    height: 200px;
+    margin-bottom: 2%;
+}
+.container-picture .content-picture .img-choose div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.container-picture .content-picture .img-choose div span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+    display: none;
+    z-index: 9;
+    justify-content: space-around;
+}
+.container-picture .content-picture .img-choose div:hover span {
+    display: flex;
+}
+.container-picture .content-picture .img-choose div span p {
+    color: red;
+}
+
+.container-picture .content-picture .video-picture {
+    position: relative;
+}
+.container-picture .content-picture .video-picture h1 {
+    margin: 50px 0;
+}
+
+.container-picture .content-picture .video-picture .contain-video {
+    margin: auto 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.container-picture .content-picture .video-picture .contain-video div {
+    width: 48.6%;
+    height: 510px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.container-picture .content-picture .video-picture .contain-video div p {
+    width: 100%;
+    height: 10%;
+    padding-top: 10px;
+    margin: 10px 0px 0px;
+}
+
+.container-picture .content-picture .video-picture .contain-video div p span {
+    font-weight: 600;
+}
+
+.container-picture .content-picture .video-picture .contain-video div img {
+    width: 100%;
+    height: 90%;
+}
+
+.container-picture .content-picture .video-picture .contain-video div i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 50px;
+    color: #fff;
+}
+
+.container-picture .content-picture .video-picture .contain-video div i:hover {
+    color: red;
+}
+
+
+.container-picture .content-picture .video-picture .img-footer-picture {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    z-index: 9;
+}
+
+.modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-box img {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: 999;
+    transform: scale(0);
+    animation: openModalBox .75s ease-in-out forwards;
+}
+
+.modal-box .background-modal-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.modal-box .background-modal-box::before {
+    content: 'X';
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: 30px;
+    width: 50px;
+    color: #000;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+@keyframes openModalBox {
+    to {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container-picture .content-picture .chose-type-img {
+        margin: auto 5%;
+    }
+    .container-picture .content-picture .img-choose {
+        margin: auto 5%;
+    }
+    .container-picture .content-picture .img-choose div {
+        width: 49%;
+        height: 300px;
+    }
+    .container-picture .content-picture .video-picture .contain-video {
+        margin: auto 5%;
+    }
+    .container-picture .content-picture .video-picture .contain-video div {
+        height: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) { 
+    .container-picture .content-picture h5 {
+        letter-spacing: 0;
+        line-height: 30px;
+        margin-bottom: 55px;
+    }
+    .container-picture .content-picture .img-choose div {
+        width: 100%;
+        height: 200px;
+    }
+    .container-picture .content-picture .video-picture .contain-video {
+        padding-bottom: 20px;
+    }
+    .container-picture .content-picture .video-picture .contain-video div {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    .container-picture .content-picture .chose-type-img .button-change-img {
+        width: 100%;
+    }
+    .modal-box img {
+        width: 300px;
+        height: 300px;
+    }
+}   
+

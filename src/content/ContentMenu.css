@@ -1,0 +1,151 @@
+.trang-chu-menu {
+    margin: auto 12.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-top {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-top h1 {
+    font-size: 50px;
+    font-family: 'Brush Script MT', monospace;
+}
+
+.menu-top h3 {
+    color: #c09440;
+}
+
+.menu-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.trang-chu-menu .chose-type-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.button-change-img {
+    color: #c09440;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 23%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    padding: 10px 5px;
+    letter-spacing: -1px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+ .button-change-img:hover {
+    background-color: #c09440;
+    color: #fff;
+    border-color: #fff;
+    transition: all .5s;
+}
+
+.menu-bottom .menu-bottom-first  {
+    position: relative;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 480px;
+}
+
+.menu-bottom .menu-bottom-first span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #c09440;
+    font-size: 180%;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.menu-bottom .menu-bottom-first select {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #c09440;
+    padding: 10px 30px;
+    font-size: 20px;
+    -webkit-appearance: none;
+}
+
+.menu-bottom .menu-bottom-first select option {
+    color: #c09440;
+    background-color: #fff;
+}
+
+.menu-bottom-second img {
+    width: 100%;
+}
+
+.out-change-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+
+@media only screen and (max-width: 450px) {
+    .menu-bottom .menu-bottom-first {
+        width: 100%;
+    }
+    .menu-top h3 {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .menu-bottom .menu-bottom-first select {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .menu-bottom .menu-bottom-first span {
+        font-size: 140%;
+        width: 40px;
+    }
+    .trang-chu-menu .chose-type-img .button-change-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .trang-chu-menu {
+        margin: auto 5%;
+    }
+    .button-change-img {
+        width: 46%;
+        margin-right: 4%;
+        font-size: 18px;
+    }
+    .button-change-img:nth-child(2), .button-change-img:nth-child(4), .button-change-img:nth-child(6) {
+        margin-left: 4%;
+        margin-right: 0%;
+    }
+}
