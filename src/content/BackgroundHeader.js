@@ -3,7 +3,7 @@ import './BackgroundHeader.css'
 
 const BackgroundHeader = (props) => {
     return (
-        <div>
+        <div>  
             <div className='background'>
                 <img src={props.backgroundTopImageHeader} alt="" />
                 <Booking />

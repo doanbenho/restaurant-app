@@ -152,6 +152,7 @@ function App() {
                 }}></span>
             </div>  
             <Routes>
+                <Route path='/http%20://doanbenho.github.io/restaurant' element={<Homepage />}/>
                 <Route path='/' element={<Homepage />}/>
                 <Route path='/Homepage' element={<Homepage />}/>
                 <Route path='/Menu' element={<Menu />}/>

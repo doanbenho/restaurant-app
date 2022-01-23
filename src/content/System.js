@@ -59,7 +59,7 @@ function System() {
 
     const [listImg, setListImg] = useState(listImage[0])
 
-
+    
     return (
         <section className='container-system'>
             <GoToTop />

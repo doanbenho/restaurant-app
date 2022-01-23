@@ -65,12 +65,12 @@ const Booking = () => {
                 alert('Bạn đã đặt bàn thành ông. Chờ nhân viên của chúng tôi liên hệ để xác nhận.')
                 inputs.forEach(item => {
                     item.value = ''
-                })
+                })  
                 setOpenBooking(false)
             }, 1000);
         }
     }
-
+   
     return (
         <div className='booking'>
             <div className='container-booking'>

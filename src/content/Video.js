@@ -7,6 +7,6 @@ const Video = (props) => {
     return (
         <video src={props.video}  controls/>
     )
-}
+}     
 
 export default Video

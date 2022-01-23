@@ -40,7 +40,7 @@ function ContentMenu() {
                                 onClick={(e) => handeleChangeColorMenu(e.target.innerHTML)}
                             >{item}</p>
                         ))
-                    }
+                    }  
                 </div>
             <div className="menu-bottom">
                 <div className='menu-bottom-first'>

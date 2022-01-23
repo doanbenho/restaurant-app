@@ -96,7 +96,7 @@
         width: 33%;
     }
 }
-
+     
 @media only screen and (max-width: 450px) {
     .container-selling .container-content-selling .content-selling h4 {
         line-height: 30px;

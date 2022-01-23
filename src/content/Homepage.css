@@ -391,7 +391,7 @@
         font-size: 10px;
     }
     .contact-homepage {
-        height: 700px;
+        height: 700px;  
     }
     .contact-homepage img:nth-child(2) {
         display: none;

@@ -42,7 +42,7 @@ function News() {
         if(e) {
             e.parentNode.removeChild(e)
         }
-    }
+    }    
  
     return (
     <section className='news'>

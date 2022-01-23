@@ -6,7 +6,7 @@ import InshortSlide from './InshortSlide.js'
 import BackgroundHeader from './BackgroundHeader'
 import GoToTop from './GoToTop.js'
 import './Menu.css'
-
+    
 function Menu() {
     return (
         <section className='menu'>

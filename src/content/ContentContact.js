@@ -90,7 +90,7 @@ function NewContent() {
                 <div>
                     <textarea placeholder='Nội dung' ref={Contentref}></textarea>
                     <span>.</span>
-                </div>
+                </div>  
             </div>
             <div>
                 <button onClick={handleSubmit}>GỬI</button>

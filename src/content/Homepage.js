@@ -43,7 +43,7 @@ function Homepage() {
         window.location = '/Pictures'
         document.title = "HINH ANH"
     }
-
+  
     return (
         <div>
             <GoToTop />

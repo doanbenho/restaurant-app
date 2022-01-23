@@ -166,7 +166,7 @@ function Picture() {
                     }
                 </div>
                 <div className='img-choose'>
-                    {
+                    {      
                         boxImg.map((item, index) => (
                             <div key={index}>
                                 <img 

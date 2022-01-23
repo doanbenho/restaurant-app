@@ -11,7 +11,7 @@ const GoToTop = () => {
         }, 10)
     }
 
-    return  (
+    return  (  
         <div>
             <span className='gototop' onClick={goToTop}><i className="fas fa-angle-double-up"></i></span>
         </div>

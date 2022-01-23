@@ -7,7 +7,7 @@ import cong1 from '../img-react/cong1.png'
 import BackgroundHeader from "./BackgroundHeader.js"
 import GoToTop from "./GoToTop.js"
 import './Contact.css'
-
+   
 function Contact() {
     return (
         <section className='contact'>

@@ -10,7 +10,7 @@ import './Aboutus.css'
 
 function Aboutus() {
 
-
+    
     return (
         <section className='aboutus'>
             <GoToTop />

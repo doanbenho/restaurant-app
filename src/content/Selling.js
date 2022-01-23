@@ -12,7 +12,7 @@ import './Selling.css'
 
 function Selling() {
 
-    return (
+    return (     
         <section className='container-selling'>
             <GoToTop />
             <BackgroundHeader backgroundTopImageHeader={sellingheader} backgroundTopImageFooter={congcont}/>
